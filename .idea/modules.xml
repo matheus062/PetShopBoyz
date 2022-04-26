@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PetShopBoyz_ProgMobile_Univali.iml" filepath="$PROJECT_DIR$/.idea/modules/PetShopBoyz_ProgMobile_Univali.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PetShopBoyz_ProgMobile_Univali.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PetShopBoyz_ProgMobile_Univali.app.iml" />
+    </modules>
+  </component>
+</project>
