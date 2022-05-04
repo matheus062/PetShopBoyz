@@ -11,9 +11,25 @@
     <FrameLayout
         android:id="@+id/loginArea"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="10"
-        >
+        tools:ignore="UselessParent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:clickable="false"
+            android:elevation="50dp"
+            android:minHeight="?attr/actionBarSize"
+            android:saveEnabled="false"
+            android:theme="?attr/actionBarTheme"
+            app:title="PetShop Boyz"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
+            app:titleTextColor="#FFFFFF"
+            />
 
         <androidx.cardview.widget.CardView
             android:layout_width="370dp"
@@ -24,12 +40,12 @@
 
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/usuarioText"
                 android:layout_width="100dp"
                 android:layout_height="20dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="25dp"
-                android:text="Usuário"
+                android:text="@string/usu_rio"
                 android:textAlignment="center" />
 
 
@@ -42,16 +58,19 @@
                 android:layout_weight="5"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:textFontWeight="@integer/material_motion_duration_short_2" />
+                android:textFontWeight="@integer/material_motion_duration_short_2"
+                android:autofillHints=""
+                tools:ignore="LabelFor"
+                tools:targetApi="p" />
 
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/senhaText"
                 android:layout_width="100dp"
                 android:layout_height="20dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="120dp"
-                android:text="Senha"
+                android:text="@string/senha"
                 android:textAlignment="center"/>
 
             <EditText
@@ -62,17 +81,19 @@
                 android:layout_marginTop="145dp"
                 android:layout_weight="5"
                 android:ems="10"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:autofillHints=""
+                tools:ignore="LabelFor" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/buttonLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginLeft="105dp"
+                android:layout_marginStart="105dp"
                 android:layout_marginTop="210dp"
                 android:layout_weight="5"
-                android:text="Login" />
+                android:text="@string/login" />
 
 
 

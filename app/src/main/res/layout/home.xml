@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeArea"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="10"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="ContentDescription">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?attr/colorPrimary"
+        android:elevation="50dp"
+        android:paddingStart="17dp"
+        android:paddingEnd="17dp"
+        android:theme="?attr/actionBarTheme">
+
+        <ImageButton
+            android:id="@+id/shopButton"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@null"
+            android:src="@drawable/shop" />
+
+        <TextView
+            android:id="@+id/usuarioText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tittle"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/userButton"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@null"
+            android:src="@drawable/user" />
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="0"
+        android:paddingStart="17dp"
+        android:paddingEnd="17dp"
+        app:elevation="50dp">
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@null"
+            android:src="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/petButton"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@null"
+            android:src="@drawable/pet" />
+
+        <ImageButton
+            android:id="@+id/calendarButton"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@null"
+            android:src="@drawable/calendar" />
+
+        <ImageButton
+            android:id="@+id/settingButton"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@null"
+            android:src="@drawable/setting" />
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/pink_primary_variant"
+        app:layout_anchor="@+id/bottom"
+        app:srcCompat="@drawable/ic_add_24dp"
+        tools:ignore="ContentDescription" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -8,5 +8,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="pink_primary">#FFA4A4</color>
-    <color name="pink_primary_variant">#ffd4d4</color>
+    <color name="pink_primary_variant">#ffbfbf</color>
 </resources>
