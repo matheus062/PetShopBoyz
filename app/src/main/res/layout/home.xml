@@ -78,6 +78,14 @@
             android:src="@drawable/pet" />
 
         <ImageButton
+            android:id="@+id/settingButton"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@null"
+            android:src="@drawable/setting" />
+
+        <ImageButton
             android:id="@+id/calendarButton"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
@@ -85,13 +93,6 @@
             android:background="@null"
             android:src="@drawable/calendar" />
 
-        <ImageButton
-            android:id="@+id/settingButton"
-            android:layout_width="75dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:background="@null"
-            android:src="@drawable/setting" />
     </com.google.android.material.bottomappbar.BottomAppBar>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

@@ -4,4 +4,7 @@
     <string name="senha">Senha</string>
     <string name="login">Login</string>
     <string name="tittle">PetShop Boyz</string>
+    <string name="type1">Banho e tosa</string>
+    <string name="type2">Banho</string>
+    <string name="type3">Tosa</string>
 </resources>
