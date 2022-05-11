@@ -10,6 +10,7 @@
     tools:context=".HomeActivity"
     tools:ignore="ContentDescription">
 
+
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -24,9 +25,9 @@
         <ImageButton
             android:id="@+id/shopButton"
             android:layout_width="75dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="start"
-            android:background="@null"
+            android:background="@color/pink_primary_dark"
             android:src="@drawable/shop" />
 
         <TextView
@@ -42,13 +43,12 @@
         <ImageButton
             android:id="@+id/userButton"
             android:layout_width="75dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="end"
             android:background="@null"
             android:src="@drawable/user" />
 
     </com.google.android.material.appbar.MaterialToolbar>
-
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -64,18 +64,18 @@
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_height="120dp"
+            android:layout_height="wrap_content"
             android:backgroundTint="@color/pink_primary_variant"
             app:cardCornerRadius="10dp"
-            app:contentPadding="10dp">
+            app:contentPadding="15dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif"
-                android:text="Banho e tosa"
+                android:text="Plano Basic"
                 android:textColor="#424242"
-                android:textSize="26sp"
+                android:textSize="32sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -83,44 +83,75 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
                 android:fontFamily="sans-serif"
-                android:text="20/04"
+                android:text="R$99,90/mensal"
                 android:textColor="#424242"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textStyle="italic" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="70dp"
                 android:fontFamily="sans-serif"
-                android:text="Bolinha"
+                android:text="1x Tosa"
                 android:textColor="#424242"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="95dp"
+                android:fontFamily="sans-serif"
+                android:text="3x Banhos"
+                android:textColor="#424242"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="125dp"
+                android:fontFamily="sans-serif"
+                android:text="1 animal cadastrado"
+                android:textColor="#424242"
+                android:textSize="18sp"
+                android:textStyle="italic" />
 
             <ImageButton
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                android:layout_gravity="center|end"
+                android:layout_gravity="end"
+                android:layout_marginTop="5dp"
                 android:layout_marginEnd="20dp"
                 android:background="@null"
-                android:src="@drawable/pet1" />
+                android:src="@drawable/one_star" />
+
+            <Button
+                android:id="@+id/buttonAssign1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="20dp"
+                android:text="Assinar" />
 
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_marginTop="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="190dp"
             android:backgroundTint="@color/pink_primary_variant"
             app:cardCornerRadius="10dp"
-            app:contentPadding="10dp">
+            app:contentPadding="15dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif"
-                android:text="Banho"
+                android:text="Plano Premium"
                 android:textColor="#424242"
-                android:textSize="26sp"
+                android:textSize="32sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -128,82 +159,77 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
                 android:fontFamily="sans-serif"
-                android:text="24/04"
+                android:text="R$149,90/mensal"
                 android:textColor="#424242"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textStyle="italic" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="70dp"
                 android:fontFamily="sans-serif"
-                android:text="Pipoca"
+                android:text="2x Tosa"
                 android:textColor="#424242"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="95dp"
+                android:fontFamily="sans-serif"
+                android:text="5x Banhos"
+                android:textColor="#424242"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:fontFamily="sans-serif"
+                android:text="2x Leva/Traz"
+                android:textColor="#424242"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:fontFamily="sans-serif"
+                android:text="1 animal cadastrado"
+                android:textColor="#424242"
+                android:textSize="18sp"
+                android:textStyle="italic" />
 
             <ImageButton
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                android:layout_gravity="center|end"
+                android:layout_gravity="end"
+                android:layout_marginTop="5dp"
                 android:layout_marginEnd="20dp"
                 android:background="@null"
-                android:src="@drawable/pet2" />
+                android:src="@drawable/three_star" />
 
-        </com.google.android.material.card.MaterialCardView>
-
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_marginTop="260dp"
-            android:backgroundTint="@color/pink_primary_variant"
-            app:cardCornerRadius="10dp"
-            app:contentPadding="10dp">
-
-            <TextView
+            <Button
+                android:id="@+id/buttonAssign2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
-                android:text="Tosa"
-                android:textColor="#424242"
-                android:textSize="26sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:fontFamily="sans-serif"
-                android:text="29/04"
-                android:textColor="#424242"
-                android:textSize="18sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="70dp"
-                android:fontFamily="sans-serif"
-                android:text="Melzinha"
-                android:textColor="#424242"
-                android:textSize="18sp" />
-
-            <ImageButton
-                android:layout_width="90dp"
-                android:layout_height="90dp"
-                android:layout_gravity="center|end"
+                android:layout_gravity="bottom|end"
                 android:layout_marginEnd="20dp"
-                android:background="@null"
-                android:src="@drawable/pet3" />
+                android:text="Assinar" />
 
         </com.google.android.material.card.MaterialCardView>
 
     </FrameLayout>
 
-
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottom"
         style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="64dp"
         android:layout_gravity="bottom"
         android:layout_weight="0"
         android:paddingStart="17dp"
@@ -213,7 +239,7 @@
         <ImageButton
             android:id="@+id/homeButton"
             android:layout_width="75dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="start"
             android:background="@null"
             android:src="@drawable/home" />
@@ -221,7 +247,7 @@
         <ImageButton
             android:id="@+id/petButton"
             android:layout_width="75dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="start"
             android:background="@null"
             android:src="@drawable/pet" />
@@ -229,7 +255,7 @@
         <ImageButton
             android:id="@+id/settingButton"
             android:layout_width="75dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="end"
             android:background="@null"
             android:src="@drawable/setting" />
@@ -237,7 +263,7 @@
         <ImageButton
             android:id="@+id/calendarButton"
             android:layout_width="75dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="end"
             android:background="@null"
             android:src="@drawable/calendar" />
@@ -246,6 +272,7 @@
     </com.google.android.material.bottomappbar.BottomAppBar>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/newSchedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/pink_primary_variant"

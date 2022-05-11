@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:layout_weight="10"
     android:orientation="vertical"
-    tools:context=".HomeActivity"
+    tools:context=".CreateSchedActivity"
     tools:ignore="ContentDescription">
 
     <com.google.android.material.appbar.MaterialToolbar
@@ -50,6 +50,91 @@
     </com.google.android.material.appbar.MaterialToolbar>
 
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="100dp"
+        android:layout_weight="5"
+        android:fadingEdge="horizontal|vertical"
+        android:fadingEdgeLength="5dp"
+        android:padding="10dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/pink_primary_variant"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:fontFamily="sans-serif"
+                    android:text="Agendar atendimento"
+                    android:textColor="#424242"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <CalendarView
+                    android:id="@+id/dateSched"
+                    android:layout_width="327dp"
+                    android:layout_height="291dp"
+                    android:layout_gravity="center|top"
+                    android:layout_marginTop="50dp"
+                    android:background="@color/pink_primary_variant_darker" />
+
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/transportButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="350dp"
+                    android:text="Leva/Traz (opcional)"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#353535"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName"
+                    android:layout_width="340dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="400dp"
+                    android:layout_weight="5"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="Observações"
+                    android:inputType="textPersonName"
+                    android:textFontWeight="@integer/material_motion_duration_short_2"
+                    tools:ignore="LabelFor"
+                    tools:targetApi="p" />
+
+
+                <Button
+                    android:id="@+id/buttonLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="460dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="5"
+                    android:text="@string/login" />
+
+            </com.google.android.material.card.MaterialCardView>
+        </ScrollView>
+    </FrameLayout>
+
+
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottom"
         style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
@@ -66,7 +151,7 @@
             android:layout_width="75dp"
             android:layout_height="match_parent"
             android:layout_gravity="start"
-            android:background="@color/pink_primary_dark"
+            android:background="@null"
             android:src="@drawable/home" />
 
         <ImageButton
@@ -99,7 +184,7 @@
         android:id="@+id/newSchedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/pink_primary_variant"
+        android:backgroundTint="@color/pink_primary_dark"
         app:layout_anchor="@+id/bottom"
         app:srcCompat="@drawable/ic_add_24dp"
         tools:ignore="ContentDescription" />
