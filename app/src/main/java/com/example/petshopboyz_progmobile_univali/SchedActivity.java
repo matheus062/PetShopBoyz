@@ -51,5 +51,13 @@ public class SchedActivity extends AppCompatActivity {
                 startActivity(switchActivityIntent);
             });
         }
+
+        ImageButton accountButton = (findViewById(R.id.userButton) != null) ? findViewById(R.id.userButton) : null;
+        if (accountButton != null) {
+            accountButton.setOnClickListener(view -> {
+                Intent switchActivityIntent = new Intent(this, accountSettings.class);
+                startActivity(switchActivityIntent);
+            });
+        }
     }
 }

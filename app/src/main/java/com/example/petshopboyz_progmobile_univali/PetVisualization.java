@@ -12,6 +12,7 @@ public class PetVisualization extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pet_visualization);
+
         ImageButton newSchedButton = (findViewById(R.id.newSchedButton) != null) ? findViewById(R.id.newSchedButton) : null;
         if (newSchedButton != null) {
             newSchedButton.setOnClickListener(view -> {
@@ -54,6 +55,14 @@ public class PetVisualization extends AppCompatActivity {
         if (singlePetVisualization != null) {
             singlePetVisualization.setOnClickListener(view -> {
                 Intent switchActivityIntent = new Intent(this, singlePetVisualization.class);
+                startActivity(switchActivityIntent);
+            });
+        }
+
+        ImageButton accountButton = (findViewById(R.id.userButton) != null) ? findViewById(R.id.userButton) : null;
+        if (accountButton != null) {
+            accountButton.setOnClickListener(view -> {
+                Intent switchActivityIntent = new Intent(this, accountSettings.class);
                 startActivity(switchActivityIntent);
             });
         }

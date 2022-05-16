@@ -210,7 +210,7 @@
             android:layout_width="75dp"
             android:layout_height="match_parent"
             android:layout_gravity="start"
-            android:background="null"
+            android:background="@null"
             android:src="@drawable/home" />
 
         <ImageButton
@@ -240,7 +240,7 @@
     </com.google.android.material.bottomappbar.BottomAppBar>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/newSchedButton7"
+        android:id="@+id/newSchedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/pink_primary_variant"

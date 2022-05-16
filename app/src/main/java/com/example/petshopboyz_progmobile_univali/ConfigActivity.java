@@ -44,10 +44,18 @@ public class ConfigActivity extends AppCompatActivity {
                 startActivity(switchActivityIntent);
             });
         }
-        ImageButton buttonPetVisualization = (findViewById(R.id.settingButton) != null) ? findViewById(R.id.settingButton) : null;
+        ImageButton buttonPetVisualization = (findViewById(R.id.petButton) != null) ? findViewById(R.id.petButton) : null;
         if (buttonPetVisualization != null) {
             buttonPetVisualization.setOnClickListener(view -> {
                 Intent switchActivityIntent = new Intent(this, PetVisualization.class);
+                startActivity(switchActivityIntent);
+            });
+        }
+
+        ImageButton accountButton = (findViewById(R.id.userButton) != null) ? findViewById(R.id.userButton) : null;
+        if (accountButton != null) {
+            accountButton.setOnClickListener(view -> {
+                Intent switchActivityIntent = new Intent(this, accountSettings.class);
                 startActivity(switchActivityIntent);
             });
         }
