@@ -2,16 +2,12 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/homeArea"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_weight="10"
-    android:orientation="vertical"
-    tools:context=".HomeActivity"
-    tools:ignore="ContentDescription">
+    tools:context=".accountSettings">
 
     <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/toolbar"
+        android:id="@+id/toolbar4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -49,76 +45,71 @@
 
     </com.google.android.material.appbar.MaterialToolbar>
 
+    <ImageButton
+        android:id="@+id/shopButton2"
+        android:layout_width="75dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@null"
+        android:src="@drawable/shop" />
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/usuarioText2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30sp"
-        android:layout_marginTop="100sp"
-        android:layout_marginEnd="30sp"
-        android:layout_marginBottom="150sp"
-        android:background="?attr/colorPrimary"
-        android:backgroundTint="?attr/colorPrimary"
-        app:cardCornerRadius="15sp">
+        android:layout_gravity="center"
+        android:text="@string/tittle"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:fontFamily="sans-serif-black"
-            android:text="Bem Vindo!"
-            android:textColor="#424242"
-            android:textSize="35sp" />
+    <ImageButton
+        android:id="@+id/userButton2"
+        android:layout_width="75dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@null"
+        android:src="@drawable/user" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5sp"
-            android:layout_marginTop="50sp"
-            android:text="Você tem direito a X Banhos e X Tosas"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5sp"
-            android:layout_marginTop="80sp"
-            android:text="Seu plano expira em X dias"
-            android:textSize="20sp" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="100dp"
+        android:layout_weight="5"
+        android:fadingEdge="horizontal|vertical"
+        android:fadingEdgeLength="5dp"
+        android:padding="10dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="180sp"
-            android:elevation="2sp"
-            android:text="Editar Plano" />
+            android:id="@+id/config1Button"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Editar Dados da Conta"
+            android:textSize="16sp" />
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5sp"
-            android:layout_marginTop="110sp"
-            android:text="Você possui X pets cadastrados"
-            android:textSize="20sp" />
+        <Button
+            android:id="@+id/config2Button"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="80dp"
+            android:text="Editar Pagamento"
+            android:textSize="16sp" />
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5sp"
-            android:layout_marginTop="140sp"
-            android:text="Seu plano será renovado dia X"
-            android:textSize="20sp" />
-    </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/config3Button"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="160dp"
+            android:text="Histórico de Compras"
+            android:textSize="16sp" />
+
+    </FrameLayout>
 
     <com.google.android.material.bottomappbar.BottomAppBar
-        android:id="@+id/bottom"
+        android:id="@+id/bottom3"
         style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
         android:layout_width="match_parent"
         android:layout_height="64dp"
@@ -133,7 +124,7 @@
             android:layout_width="75dp"
             android:layout_height="match_parent"
             android:layout_gravity="start"
-            android:background="@color/pink_primary_dark"
+            android:background="@null"
             android:src="@drawable/home" />
 
         <ImageButton
@@ -149,7 +140,7 @@
             android:layout_width="75dp"
             android:layout_height="match_parent"
             android:layout_gravity="end"
-            android:background="@null"
+            android:background="@color/pink_primary_dark"
             android:src="@drawable/setting" />
 
         <ImageButton
@@ -163,12 +154,11 @@
     </com.google.android.material.bottomappbar.BottomAppBar>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/newSchedButton"
+        android:id="@+id/newSchedButton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/pink_primary_variant"
-        app:layout_anchor="@+id/bottom"
+        app:layout_anchor="@+id/bottom3"
         app:srcCompat="@drawable/ic_add_24dp"
         tools:ignore="ContentDescription" />
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

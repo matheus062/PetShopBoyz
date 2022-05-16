@@ -44,5 +44,12 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(switchActivityIntent);
             });
         }
+        ImageButton buttonPetVisualization = (findViewById(R.id.petButton) != null) ? findViewById(R.id.petButton) : null;
+        if (buttonPetVisualization != null) {
+            buttonPetVisualization.setOnClickListener(view -> {
+                Intent switchActivityIntent = new Intent(this, PetVisualization.class);
+                startActivity(switchActivityIntent);
+            });
+        }
     }
 }

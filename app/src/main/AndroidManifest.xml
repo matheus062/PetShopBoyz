@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PetShopBoyz_ProgMobile_Univali">
         <activity
+            android:name=".accountSettings"
+            android:exported="false" />
+        <activity
+            android:name=".singlePetVisualization"
+            android:exported="false" />
+        <activity
+            android:name=".PetVisualization"
+            android:exported="false" />
+        <activity
+            android:name=".AnimalRegister"
+            android:exported="false" />
+        <activity
             android:name=".ConfigActivity"
             android:exported="false" />
         <activity

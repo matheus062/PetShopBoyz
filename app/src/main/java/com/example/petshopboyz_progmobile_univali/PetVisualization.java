@@ -6,21 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageButton;
 
-public class ConfigActivity extends AppCompatActivity {
+public class PetVisualization extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_config);
-
-        ImageButton buttonShop = (findViewById(R.id.shopButton) != null) ? findViewById(R.id.shopButton) : null;
-        if (buttonShop != null) {
-            buttonShop.setOnClickListener(view -> {
-                Intent switchActivityIntent = new Intent(this, ShopActivity.class);
-                startActivity(switchActivityIntent);
-            });
-        }
-
+        setContentView(R.layout.activity_pet_visualization);
         ImageButton newSchedButton = (findViewById(R.id.newSchedButton) != null) ? findViewById(R.id.newSchedButton) : null;
         if (newSchedButton != null) {
             newSchedButton.setOnClickListener(view -> {
@@ -44,10 +35,25 @@ public class ConfigActivity extends AppCompatActivity {
                 startActivity(switchActivityIntent);
             });
         }
-        ImageButton buttonPetVisualization = (findViewById(R.id.settingButton) != null) ? findViewById(R.id.settingButton) : null;
-        if (buttonPetVisualization != null) {
-            buttonPetVisualization.setOnClickListener(view -> {
-                Intent switchActivityIntent = new Intent(this, PetVisualization.class);
+
+        ImageButton buttonConfig = (findViewById(R.id.settingButton) != null) ? findViewById(R.id.settingButton) : null;
+        if (buttonConfig != null) {
+            buttonConfig.setOnClickListener(view -> {
+                Intent switchActivityIntent = new Intent(this, ConfigActivity.class);
+                startActivity(switchActivityIntent);
+            });
+        }
+        ImageButton buttonShop = (findViewById(R.id.shopButton) != null) ? findViewById(R.id.shopButton) : null;
+        if (buttonShop != null) {
+            buttonShop.setOnClickListener(view -> {
+                Intent switchActivityIntent = new Intent(this, ShopActivity.class);
+                startActivity(switchActivityIntent);
+            });
+        }
+        ImageButton singlePetVisualization = (findViewById(R.id.singlePetButton) != null) ? findViewById(R.id.singlePetButton) : null;
+        if (singlePetVisualization != null) {
+            singlePetVisualization.setOnClickListener(view -> {
+                Intent switchActivityIntent = new Intent(this, singlePetVisualization.class);
                 startActivity(switchActivityIntent);
             });
         }

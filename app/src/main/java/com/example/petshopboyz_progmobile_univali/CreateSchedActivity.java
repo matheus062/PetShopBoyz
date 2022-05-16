@@ -44,5 +44,12 @@ public class CreateSchedActivity extends AppCompatActivity {
                 startActivity(switchActivityIntent);
             });
         }
+        ImageButton buttonPetVisualization = (findViewById(R.id.settingButton) != null) ? findViewById(R.id.settingButton) : null;
+        if (buttonPetVisualization != null) {
+            buttonPetVisualization.setOnClickListener(view -> {
+                Intent switchActivityIntent = new Intent(this, PetVisualization.class);
+                startActivity(switchActivityIntent);
+            });
+        }
     }
 }

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PetVisualization">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="100dp"
+        android:layout_weight="5"
+        android:fadingEdge="horizontal|vertical"
+        android:fadingEdgeLength="5dp"
+        android:padding="10dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:backgroundTint="@color/pink_primary_variant"
+            app:cardCornerRadius="10dp"
+            app:contentPadding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Mutley"
+                android:textColor="#424242"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="sans-serif"
+                android:text="Cachorro"
+                android:textColor="#424242"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:fontFamily="sans-serif"
+                android:text="Médio"
+                android:textColor="#424242"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/singlePetButton"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center|end"
+                android:layout_marginEnd="20dp"
+                android:background="@null"
+                android:src="@drawable/pet1" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="130dp"
+            android:backgroundTint="@color/pink_primary_variant"
+            app:cardCornerRadius="10dp"
+            app:contentPadding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Millie"
+                android:textColor="#424242"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="sans-serif"
+                android:text="Cachorro"
+                android:textColor="#424242"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:fontFamily="sans-serif"
+                android:text="Pequeno"
+                android:textColor="#424242"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center|end"
+                android:layout_marginEnd="20dp"
+                android:background="@null"
+                android:src="@drawable/pet2" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="260dp"
+            android:backgroundTint="@color/pink_primary_variant"
+            app:cardCornerRadius="10dp"
+            app:contentPadding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Louis"
+                android:textColor="#424242"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="sans-serif"
+                android:text="Cachorro"
+                android:textColor="#424242"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:fontFamily="sans-serif"
+                android:text="Grande"
+                android:textColor="#424242"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center|end"
+                android:layout_marginEnd="20dp"
+                android:background="@null"
+                android:src="@drawable/pet3" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </FrameLayout>
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="?attr/colorPrimary"
+        android:elevation="50dp"
+        android:paddingStart="17dp"
+        android:paddingEnd="17dp"
+        android:theme="?attr/actionBarTheme">
+
+        <ImageButton
+            android:id="@+id/shopButton"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@null"
+            android:src="@drawable/shop" />
+
+        <TextView
+            android:id="@+id/usuarioText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tittle"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/userButton"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="@null"
+            android:src="@drawable/user" />
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom7"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:paddingStart="17dp"
+        android:paddingEnd="17dp"
+        app:elevation="50dp">
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="null"
+            android:src="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/petButton"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/pink_primary_dark"
+            android:src="@drawable/pet" />
+
+        <ImageButton
+            android:id="@+id/settingButton"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="@null"
+            android:src="@drawable/setting" />
+
+        <ImageButton
+            android:id="@+id/calendarButton"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="@null"
+            android:src="@drawable/calendar" />
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/newSchedButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/pink_primary_variant"
+        app:layout_anchor="@id/bottom7"
+        app:srcCompat="@drawable/ic_add_24dp"
+        tools:ignore="ContentDescription" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
